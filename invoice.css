@@ -20,3 +20,10 @@ footer {
 }
 /*End Sticky Footer*/
 
+.container {
+    border: solid 1px;
+}
+
+.container-fluid {
+    border: solid 1px;
+}
