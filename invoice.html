@@ -1,158 +1,120 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BS Forms</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BS Forms</title> <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/index.css">
-    <!--Invoice-->
-    <link rel="stylesheet" href="/invoice.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/site.css" />
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <header>
-        <nav>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/index.html">BS Forms</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/addressbook">Address Book</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/invoice.html">Invoice</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header class="d-print-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid"> <a class="navbar-brand" href="/index.html">BS Forms</a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link" href="/index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="/contact.html">Contact</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="/addressbook.html">Address Book</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                                href="/invoice.html">Invoice</a> </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
         </nav>
     </header>
     <main class="container mt-4">
-        <div class="text-end d-print-none">
-            <button class="btn btn-dark" type="button" onClick="window.print()">Print this page</button>
-        </div>
+        <div class="text-end d-print-none"> <button class="btn btn-dark" onclick="window.print()">Print This
+                Page</button> </div>
         <div class="row border align-items-center">
-            <div col-12 col-md-7>
-                <img src="/assets/IdeaFoundryLogo.svg" alt="Idea Foundry Logo" class="img-fluid" />
-            </div>
-            <div class="col-12 col-md-5 text-end">
-                <strong>Customer:</strong>&nbsp;4908
-            </div>
+            <div class="col-12 col-md-7"> <img src="/assets\IdeaFoundryLogo.svg" class="img-fluid" /> </div>
+            <div class="col-12 col-md-5 text-end"> <strong>Customer:</strong>&nbsp;4908 </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col">
-                <strong>Date:</strong>&nbsp;05/12/2019
-            </div>
+        <div class="row border">
+            <div class="col-12 col-md-6"> <strong>Date:</strong>&nbsp;03/30/2023 </div>
+            <div class="col-12 col-md-6 text-md-end"> <strong>Invoice No.:</strong>&nbsp;19005 </div>
         </div>
         <div class="row border row-cols-2">
-            <div class="col">
-                <strong>Invoice To:</strong>
-                <address class="col-12">Mark Davis <br>
-                3333 Al Davis Way <br>
-                Las Vegas, NV 89118
-                </address>
+            <div class="col"> <strong>Invoice To:</strong>
+                <address> Mark Davis <br /> 3333 Al Davis Way <br /> Las Vegas, NV 89118 </address>
             </div>
-            <div class="col text-end">
-                <strong>Pay To:</strong>
-                <address class="col-12">Idea Foundry, Inc. <br>
-                    2705 N. Enterprise St. <br>
-                    Kernersville, NC 27284
-                </address>
+            <div class="col text-end"> <strong>Pay to:</strong>
+                <address> Idea Foundry,Inc. <br /> 2705 N. Enterprise St <br /> Kernersville, NC 27284 </address>
             </div>
         </div>
-        <div class="container-md">
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr class="table-dark">
-                            <th scope="col">Service</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Rate</th>
-                            <th scope="col">QTY</th>
-                            <th scope="col">Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-success">Design</td>
-                            <td class="table-success">Website Design</td>
-                            <td class="table-success">$60.00</td>
-                            <td class="table-success">10</td>
-                            <td class="table-success">$600.00</td>
-                        </tr>
-                        <tr>
-                            <td>Development</td>
-                            <td>Website Development</td>
-                            <td>$150.00</td>
-                            <td>10</td>
-                            <td>$1,500.00</td>
-                        </tr>
-                        <tr>
-                            <td class="table-success">Deployment</td>
-                            <td class="table-success">Deployment and Hosting</td>
-                            <td class="table-success">$450.00</td>
-                            <td class="table-success">1</td>
-                            <td class="table-success">$450.00</td>
-                        </tr>
-                        <tr>
-                            <td>Sub Total:</td>
-                            <td colspan="3"></td>
-                            <td>$2,550.00</td>
-                        </tr>
-                        <tr>
-                            <td>Tax:</td>
-                            <td colspan="3"></td>
-                            <td>$0.00</td>
-                        </tr>
-                        <tr>
-                            <td>Total:</td>
-                            <td colspan="3"></td>
-                            <td>$2,550.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="table-responsive row">
+            <table class="table table-striped table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Rate</th>
+                        <th>QTY</th>
+                        <th class="text-end">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Design</td>
+                        <td>Website Design</td>
+                        <td>$60.00</td>
+                        <td>10</td>
+                        <td class="text-end">$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td>Website Development</td>
+                        <td>$150.00</td>
+                        <td>10</td>
+                        <td class="text-end">$1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td>$450.00</td>
+                        <td>1</td>
+                        <td class="text-end">$450.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-end">Sub Total:</td>
+                        <td class="text-end">$2,550.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-end">Tax:</td>
+                        <td class="text-end">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-end">Total:</td>
+                        <td class="text-end">$2,550.00</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
-        <h3>NOTE: This is a computer generated receipt and does not require physical signature.</h3>
+        <div class="py-3"> <strong>NOTE:</strong> This is a computer generated document and does not require a physical
+            signature </div>
     </main>
     <footer>
         <div class="bg-dark text-light py-3 container-fluid">
             <div class="row row-cols-1 row-cols-md-3">
-                <div class="col text-center text-md-start">&copy; Built by Angelena Nunez 2023</div>
+                <div class="col text-center text-md-start">&copy; 2023 Built By Jacob</div>
                 <div class="col text-center">Bootstrap Forms</div>
-                <div class="col text-center text-md-end">angelcorralnunez@gmail.com</div>
+                <div class="col text-center text-md-end">jvisick@coderfoundry.com</div>
             </div>
         </div>
-    </footer>
+    </footer> <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
-    <script src="" async defer></script>
 </body>
 
 </html>
